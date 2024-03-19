@@ -25,7 +25,7 @@ razorpay_client = razorpay.Client(
 
 # --------------------------------- PAYMENT PAGE ---------------------------------
 def payment(request):
-    amount = 20000
+    amount = request.session.get('amount')
     currency = request.session.get('currency', 'INR')
     # Create a Razorpay Order
     razorpay_order = razorpay_client.order.create(

@@ -7,14 +7,14 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="responsive categorymenu">
-					{% for p in cat %}
+					<!-- {% for p in cat %}
 					<div class="cat-wrapper">
 						<div class="text-center">
 							<a href="{% url 'store:category' id=p.id %}"><img src="{{ p.icon.url }}"/></a>
 							<a href="{% url 'store:category' id=p.id %}">{{ p.name }}</a>
 						</div>
 					</div>
-					{% endfor %}
+					{% endfor %} -->
 				</div>
 			</div>
 		</div>
@@ -28,7 +28,9 @@
 					<div style="margin:0 auto;">
 						<ul id="demo3">
 							{% for sld in slide %}
-							<li><img height="100" src="{{ sld.slideimg.url }}"/></li>
+							<li><img height="50" src="{% static 'images/slides-img/1.jpg' %}"/></li>
+							<li><img height="50" src="{% static 'images/slides-img/2.jpg' %}"/></li>
+							<li><img height="50" src="{% static 'images/slides-img/3.jpg' %}"/></li>
 							{% endfor %}
 						</ul>
 					</div>
@@ -36,7 +38,6 @@
 				<div class="col-sm-12">
 					<div class="titleheader">
 						<h3 class="h2header text-center">New Published Book</h3>
-						<a href="#">See All</a>
 					</div>
 					<div class="regulara sliderzx">
 						{% for item in newbooks %}
@@ -52,7 +53,7 @@
 							</div>
 							<p> {{ item.price }} Rs.</p>
 							<button class="btn btn-warning" id="addTocart" data-book-id="{{ item.id }}">
-									<i class="fa fa-shopping-cart""></i>Add to cart
+									<i class="fa fa-shopping-cart"></i>Add to cart
 								</button>
 						</div>
 						{% endfor %}

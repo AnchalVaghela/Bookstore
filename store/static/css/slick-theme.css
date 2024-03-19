@@ -1,9 +1,9 @@
 @charset 'UTF-8';
 /* Slider */
-.slick-loading .slick-list
+/* .slick-loading .slick-list
 {
     background: #fff url('./image/slickimg/ajax-loader.gif') center center no-repeat;
-}
+} */
 
 /* Icons */
 @font-face
@@ -96,7 +96,7 @@
     cursor: pointer;
     background: center url("image/slickimg/Left.png") no-repeat;
 }
-}
+
 [dir='rtl'] .slick-prev{
     right: -5px;
     left: auto;
