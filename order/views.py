@@ -6,7 +6,7 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from cart.cart import Cart
 from .models import Order, OrderItem
 from .forms import OrderCreateForm
-from .pdfcreator import renderPdf
+# from .pdfcreator import renderPdf
 
 
 
@@ -22,10 +22,10 @@ import razorpay
 razorpay_client = razorpay.Client(
     auth=(settings.RAZOR_KEY_ID, settings.RAZOR_KEY_SECRET))
 
-
+@login_required
 # --------------------------------- PAYMENT PAGE ---------------------------------
 def payment(request):
-    amount = request.session.get('amount')
+    amount = 20000
     currency = request.session.get('currency', 'INR')
     # Create a Razorpay Order
     razorpay_order = razorpay_client.order.create(
@@ -57,7 +57,7 @@ def payment(request):
 def paymenthandler(request):
     # only accept POST request.
     if request.method == "POST":
-        amount = 20000
+        amount =20000
         try:
             # get the required parameters from post request.
             payment_id = request.POST.get('razorpay_payment_id', '')

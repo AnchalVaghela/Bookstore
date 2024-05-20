@@ -13,7 +13,7 @@
     font-style: normal;
 
     src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    /* src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg'); */
 }
 /* Arrows */
 .slick-prev,
@@ -122,7 +122,6 @@
     cursor: pointer;
     background: center url("image/slickimg/Right.png") no-repeat;
 	z-index:999;
-}
 }
 [dir='rtl'] .slick-next{
     right: auto;

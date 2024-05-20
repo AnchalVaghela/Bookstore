@@ -9,6 +9,6 @@ urlpatterns = [
 	path('shipping/', views.order_create, name="order_create"),
 	# path('pdf/<int:id>',views.pdf.as_view(), name="pdf"),
     path('payment', views.payment, name='payment'),
-	path('Home/payment/payment-handler/', views.paymenthandler, name='payment_handler'),
+	path('Home/payment/payment-handler', views.paymenthandler, name='payment_handler'),
 
 ]

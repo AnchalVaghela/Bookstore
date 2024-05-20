@@ -30,7 +30,16 @@
 					    </table>
 						<div class="continue_or_next text-center">
 							<a href="{% url 'store:index' %}" class="btn _to_shope">Continue to Shope</a>
+							{% if user.is_authenticated %}
 							<a href="{% url 'order:payment' %}" class="btn _to_continue">Proceed to Checkout</a>
+							{% else %}
+
+							<div class="shadow p-4 mb-5 bg-body bg-body rounded text-black  m-5 ">
+								<h1 class="p-2  me-3">You Are Not Signed in!</h1>
+								<a href="{% url 'store:login' %}" class="btn btn-primary shadow text-center">Sign in</a>
+							</div>
+
+							{% endif %}
 						</div>
 					</div>
 				</div>

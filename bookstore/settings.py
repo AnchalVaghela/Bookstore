@@ -162,10 +162,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
-PAYPAL_TEST = True
-PAYPAL_CLIENT_ID = 'AQTtPlcnDxdk2CFeuMQORZQXI0iNmhzvtIcABbQOWtn3_GCStYCpB428WRZThDkT1rid7swc-t2gnE9V'
-PAYPAL_CLIENT_SECRET = 'EGeRlQCutZ9P9loO05YuXiNL8fzhfDfXBDAgvGGC2zN61MnUNrW9YnhcaQ-6u7vI5IlK4HKCcw5f3z14'
-PAYPAL_MODE = 'sandbox'  # Change to 'live' for production
+# PAYPAL_TEST = True
+# PAYPAL_CLIENT_ID = 'AQTtPlcnDxdk2CFeuMQORZQXI0iNmhzvtIcABbQOWtn3_GCStYCpB428WRZThDkT1rid7swc-t2gnE9V'
+# PAYPAL_CLIENT_SECRET = 'EGeRlQCutZ9P9loO05YuXiNL8fzhfDfXBDAgvGGC2zN61MnUNrW9YnhcaQ-6u7vI5IlK4HKCcw5f3z14'
+# PAYPAL_MODE = 'sandbox'  # Change to 'live' for production
 
 
 

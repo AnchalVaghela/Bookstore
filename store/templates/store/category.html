@@ -1,7 +1,7 @@
 {% extends 'store/base.html' %}
 {% load customfunction %}
 {% block container %}
-			<div class="row">
+			<div class="row ">
 				{% for item in book %}
 				<div class = 'col-sm-3'>
 					<div class="book-wrapper text-center">
@@ -15,8 +15,8 @@
 							<span class="totalrating">{{ item.totalreview|add:-1 }}</span>
 						</div>
 						<p> {{ item.price }} Rs. </p>
-						<button class="btn btn-warning" id="addTocart" data-book-id="{{ item.id }}">
-								<i class="fa fa-shopping-cart""></i>Add to cart
+						<button class="btn btn-primary" id="addTocart" data-book-id="{{ item.id }}">
+								<i class="fa fa-shopping-cart"></i>Add to cart
 						</button>
 					</div>
 				</div>

@@ -96,12 +96,7 @@ text-decoration:underline;
 	right:2%;
 	margin-top:-17px;
 }
-.skdslider a.prev:hover{
-  
-}
-.skdslider a.next:hover{
-  
-}
+
 
 .skdslider a.play{
     background: url("image/skslide/play.png") no-repeat scroll center center transparent;
